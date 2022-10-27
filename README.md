@@ -33,7 +33,6 @@ Example 1: The following code uses an empty key to compute the HMAC:
 
 ``
 import hmac
-
 mac = hmac.new("", plaintext).hexdigest()
 ``
 
@@ -52,7 +51,6 @@ Example 1: The following code passes the empty string as the password argument t
 
 ``
 from hashlib import pbkdf2_hmac
-
 dk = pbkdf2_hmac('sha256', '', salt, 100000)
 ``
 
@@ -89,7 +87,6 @@ Example 1: The following code uses a hardcoded key to compute the HMAC:
 
 ``
 import hmac
-
 mac = hmac.new("secret", plaintext).hexdigest()
 ``
 
@@ -111,7 +108,6 @@ Example 1: The following code passes a hardcoded value as the password argument 
 
 ``
 from hashlib import pbkdf2_hmac
-
 dk = pbkdf2_hmac('sha256', 'password', salt, 100000)
 ``
 
