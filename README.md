@@ -1,6 +1,3 @@
-# Key Management
-
-
 ## Key Management: Empty Encryption Key
 
 ### Abstract
