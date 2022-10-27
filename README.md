@@ -35,7 +35,6 @@ Example 1: The following code uses an empty key to compute the HMAC:
 import hmac
 
 mac = hmac.new("", plaintext).hexdigest()
-
 ``
 
 The code in Example 1 may run successfully, but anyone who has access to it will be able to figure out that it uses an empty HMAC key. After the program ships, there is likely no way to change the empty HMAC key unless the program is patched. A devious employee with access to this information could use it to compromise the HMAC function. Also, the code in Example 1 is vulnerable to forgery and key recovery attacks.
