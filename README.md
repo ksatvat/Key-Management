@@ -5,7 +5,7 @@
 
 ### Abstract
 Empty encryption keys can compromise security in a way that cannot be easily remedied.
-Explanation
+### Explanation
 It is never a good idea to use an empty encryption key. Not only does using an empty encryption key significantly reduce the protection afforded by a good encryption algorithm, but it also makes fixing the problem extremely difficult. After the offending code is in production, the empty encryption key cannot be changed without patching the software. If an account protected by the empty encryption key is compromised, the owners of the system must choose between security and availability.
 
 Example: The following code initializes an encryption key variable to an empty string.
