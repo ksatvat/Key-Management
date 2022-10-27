@@ -10,11 +10,11 @@ It is never a good idea to use an empty encryption key. Not only does using an e
 
 Example: The following code initializes an encryption key variable to an empty string.
 
-...
+``
 from Crypto.Ciphers import AES
 cipher = AES.new("", AES.MODE_CFB, iv)
 msg = iv + cipher.encrypt(b'Attack at dawn')
-...
+``
 
 
 Not only will anyone who has access to the code be able to determine that it uses an empty encryption key, but anyone with even basic cracking techniques is much more likely to successfully decrypt any encrypted data. After the program ships, a software patch is required to change the empty encryption key. An employee with access to this information can use it to break into the system. Even if attackers only had access to the application's executable, they could extract evidence of the use of an empty encryption key.
